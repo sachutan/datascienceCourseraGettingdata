@@ -57,13 +57,11 @@ Requirement 4. Appropriately labels the data set with descriptive variable names
 
 The column names for the data are given in the file 'features.txt'. I read 'features.txt' into data frame features. I used the following substitutions (R function gsub) on the second column in data frame 'features' to make the column names more readable:
 
-REPLACE FOLLOWING       WITH
-
--                       _
-,                       _
-()                      blank
-)                       blank
-(                       _
+1> Replace '-' with '_'.
+2> Replace ',' with '_'.
+3> Replace '()' with ''.
+4> Replace '(' with ''.
+5> Replace ')' with ''.
 
 So now I have the required names as the second column in data frame 'features'.
 Then I set the column names of main data frame 'train_test' as 'Subject', 'Activity' and the second column of the data frame 'features' using R function colnames
