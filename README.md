@@ -93,11 +93,6 @@ To test the output, I executed the following command:
 
 d <- read.table("TidyDataFinal.txt", as.is = TRUE, header = TRUE, sep = "\t", row.names = NULL)
 
-I ran following commands to see that they were the same:
-
-dim(result)
-dim(d)
-all.equl(result, d)
 
 
 
