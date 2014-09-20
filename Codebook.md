@@ -26,12 +26,13 @@ For e.g. value 'WALKING' in 'Activty' column and value 1 in 'Subject' column tog
 ------
 Columns after column Subject are explained below:
 
-From the main data frame (mentioned in the background section above), for a certain subject (e.g. 1) and activity (e.g. walking), the values in following COLUMN 2 (as they appear in the original data files, X_train.txt and X_test.txt ) were averaged i.e. R function 'mean' was applied on these values,  by Activity and Subject, to arrive at the corresponding value in following COLUMN 1 (as they appear in the delivered data file, 'TidyDataFinal.txt') : 
+From the main data frame (mentioned in the background section above), for a certain subject (e.g. 1) and activity (e.g. walking), the measurements (e.g as for tBodyAcc-mean()-X) as they appear in the original data files, X_train.txt and X_test.txt ) were averaged i.e. R function 'mean' was applied on these values, by Activity and Subject, to arrive at the corresponding value (e.g as for tBodyAcc_mean_X) as they appear in the delivered data file, 'TidyDataFinal.txt': 
 
 COLUMN 1 (derived to this)                  COLUMN 2 (derived from this)
 
 
-tBodyAcc_mean_X                             tBodyAcc-mean()-X
+tBodyAcc_mean_X was derived from tBodyAcc-mean()-X
+
 tBodyAcc_mean_Y                             tBodyAcc-mean()-Y
 tBodyAcc_mean_Z                             tBodyAcc-mean()-Z
 tBodyAcc_std_X                              tBodyAcc-std()-X
